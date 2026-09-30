@@ -1,0 +1,42 @@
+{
+  "name": "pi-tps",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Honest tokens-per-second for the Pi coding agent: decode speed, TTFT, and a live estimate that never pretends to be usage.output.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tps",
+    "ttft",
+    "tokens-per-second",
+    "throughput"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "FINDINGS.md",
+    "NOTICE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/extension.ts"
+    ]
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.80.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "@types/proper-lockfile": "^4.1.4"
+  },
+  "dependencies": {
+    "proper-lockfile": "^4.1.2"
+  }
+}
